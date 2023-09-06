@@ -33,6 +33,7 @@ header{
 }
 nav ul {
     list-style-type: none;
+    display: none;
 }
 
 nav ul li {
@@ -110,5 +111,13 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+    nav ul {
+        display: block;
+    }
     .menu-icon{ display: none;} 
+    #post-1{width: 964px;}
+    #line {width: 964px;}
+    #content-1 {width: 1200px; height: 150px;}
+    #content-2 {display: none;}
+
 }
