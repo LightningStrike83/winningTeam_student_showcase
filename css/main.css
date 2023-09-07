@@ -13,7 +13,14 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
 }
+
+a:visited {
+    color: black;
+}
+
+/* 2. Nav */
 
 .header-nav {
     height: 120px;
@@ -53,14 +60,6 @@ nav ul li a:hover {
     color: white;
 }
 
-a {
-    color: black;
-}
-
-a:visited {
-    color: black;
-}
-
 .menu-icon {
     position: absolute;
     right: 10px;
@@ -68,27 +67,7 @@ a:visited {
     height: 110px;
 }
 
-footer {
-    height: 140px;
-    background-color: antiquewhite;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-}
-
-.footer-logo {
-    position: absolute;
-    left: 50px;
-    top: 25px;
-}
-
-.logo-footer {
-    height: 60px;
-}
-
-/* 2. Index */
+/* 3. Index */
 
 #video {
     height: 378px;
@@ -138,7 +117,7 @@ footer {
     margin-top: 40px;
 }
 
-/* 3. Client Projects */
+/* 4. Client Projects */
 
 #hero-con {
     margin-top: 33px;
@@ -164,6 +143,52 @@ footer {
     background-color: red;
 }
 
+/* 5. Student Work */
+
+#hero-student {
+    height: 200px;
+    margin-top: 33px;
+    margin-bottom: 33px;
+    background-color: green;
+}
+
+#student-work, #portfolio-links {
+    height: 100px;
+    margin-bottom: 33px;
+}
+
+#student-work {
+    background-color: magenta;
+}
+
+#portfolio-links {
+    background-color: maroon;
+}
+
+/* 6. Footer */
+
+footer {
+    height: 140px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    /* justify-items: center; */
+}
+
+.footer-logo {
+    position: absolute;
+    left: 50px;
+    top: 25px;
+}
+
+.logo-footer {
+    height: 60px;
+}
+
+/* 7. Media Queries */
 
 
 @media screen and (min-width: 768px) {
