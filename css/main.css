@@ -15,14 +15,9 @@ a {
     text-decoration: none;
 }
 
-header {
-    height: 118px;
-    background-color: grey;
-}
-
-#header-nav {
-    display: flex;
-    justify-content: space-between;
+.header-nav {
+    height: 120px;
+    background-color: gray;
     padding-left: 30px;
     align-items: center;
     flex-direction: column;
@@ -35,7 +30,7 @@ header {
 }
 
 .header-logo {
-    max-height: 100px;
+    max-width: 200px;
 }
 
 nav ul {
@@ -45,7 +40,12 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin-left: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav ul li:first-of-type {
+    border-left: none;
 }
 
 nav ul li a:hover {
