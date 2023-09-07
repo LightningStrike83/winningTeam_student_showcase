@@ -24,7 +24,7 @@ a:visited {
 
 .header-nav {
     height: 120px;
-    background-color: gray;
+    background-color: pink;
     padding-left: 30px;
     align-items: center;
     flex-direction: column;
@@ -38,7 +38,18 @@ a:visited {
 
 .header-logo {
     max-width: 200px;
+    transition: all 0.5s ease-in-out;
 }
+
+.header-logo:hover {
+    opacity: 75%;
+}
+
+/*.header-logo:hover {
+    padding-top: 10px;
+    padding-bottom: 13px;
+    border-top: 3px solid white;
+}*/
 
 nav ul {
     list-style-type: none;
@@ -182,6 +193,11 @@ footer {
     position: absolute;
     left: 50px;
     top: 25px;
+    transition: all 0.5s ease-in-out;
+}
+
+.footer-logo:hover {
+    opacity: 75%;
 }
 
 .logo-footer {
