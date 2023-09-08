@@ -183,6 +183,16 @@ nav ul li a:hover {
     margin-bottom: 33px;
 }
 
+#client-title {
+    font-weight: bold;
+}
+
+#title-2024 {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
 #client-projects {
     height: 200px;
     background-color: orange;
@@ -191,13 +201,21 @@ nav ul li a:hover {
 
 #project-examples {
     background-color: blue;
-    height: 1200px;
+    height: 200px;
     margin-bottom: 33px;
 }
 
-#image_1, #image_2, #image_3 {
-    height: 378px;
-    background-color: red;
+#testimonials {
+    text-align: center;
+}
+
+.client-arrows {
+    display: flex;
+    align-items: flex-end;
+}
+
+#client-arrow-right {
+    justify-content: flex-end;
 }
 
 /* 5. Student Work */
