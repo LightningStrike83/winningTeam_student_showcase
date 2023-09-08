@@ -85,22 +85,48 @@ nav ul li a:hover {
     background-color: bisque;
 } 
 
+#video-title {
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#fanshawe-video {
+    font-weight: bold;
+}
+
 #home-img {
     height: 378px;
     background-color: cadetblue;
 }
 
-.box-container {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    margin-top: 50px;
+#industry_title {
+    font-size: 50px;
+    font-weight: bold;
 }
 
-#post-1 {
-    height: 168px;
-    width: 390px;
-    background-color: gray;
+#date-details {
+    background-color: azure;
+    padding-bottom: 33px;
+    border-bottom: 5px solid black;
+}
+
+#about-program { 
+    margin-top: 50px;
+    background-color: red;
+}
+
+#about-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#learn-more {
+    height: 40px;
+    border: 3px solid white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #line {
@@ -126,6 +152,16 @@ nav ul li a:hover {
     background-color: aqua;
     height: 378px;
     margin-top: 40px;
+}
+
+#feature-links {
+    height: 200px;
+    background-color: orange;
+    padding-top: 20px;
+}
+
+#client-work-index, #student-work-index {
+    text-align: center;
 }
 
 /* 4. Client Projects */
@@ -204,6 +240,20 @@ footer {
     height: 60px;
 }
 
+.triangle {
+    width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 30px solid #555;
+    margin-right: 10px;
+}
+
+.top-icon a {
+    display: flex;
+    align-items: center;
+}
+
 /* 7. Media Queries */
 
 
@@ -242,6 +292,10 @@ footer {
     #project-examples {
         height: 400px;
         flex-direction: row;
+    }
+
+    #date-details {
+        border-bottom: none;
     }
 
 }

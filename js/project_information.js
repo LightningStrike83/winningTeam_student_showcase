@@ -30,12 +30,12 @@ let project_members = [
     },
 
     {
-        projectname : "",
-        description : "",
-        members : "",
-        link1 : "",
-        link2 : "",
-        link3 : "",
-        link4 : "",
+        projectname : "Elden Ring",
+        description : "Draconic Tree Sentinel, Mimic Tear, Dragonlord Placidusax, Red Wolf of Radagon",
+        members : "Elden Ring takes place in the Lands Between, a fictional realm over which several demigods rule. As a Tarnished, your goal is to collect the fragmented runes of each demigod to user in a new Era for the Lands Between.",
+        link1 : "Draconic Tree Sentinel's website: https://eldenring.wiki.fextralife.com/Draconic+Tree+Sentinel",
+        link2 : "Mimic Tear's website: https://eldenring.wiki.fextralife.com/Mimic+Tear",
+        link3 : "Dragonlord Placidusax's website: https://eldenring.wiki.fextralife.com/Dragonlord+Placidusax",
+        link4 : "Red Wolf of Radagon's website: https://eldenring.wiki.fextralife.com/Red+Wolf+of+Radagon",
     },
 ]
