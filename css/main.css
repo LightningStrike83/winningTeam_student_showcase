@@ -19,105 +19,277 @@ a {
 
 /* style header */
 header{
-    height: 118px;
+    height: 70px;
     background-color: grey;
+    display: grid;
+}
+#header-logo {
+    width: 150px;
+    margin-top: 15px;
 }
 
-#header-nav {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 30px;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-}
-nav ul {
-    list-style-type: none;
-    display: none;
-}
-
+nav ul {margin-top: 30px;}
 nav ul li {
-    display: inline-block;
-    margin-left: 40px;
+    display: inline;
+    margin-left: 10px;
+    
+}
+nav ul li a {font-size: 22px; color: #E2231A; display: none;}
+
+#ham-menu img{
+    width: 64px;
+    margin-top: 5px;
 }
 
-.menu-icon {
-    position: absolute;
-    right: 10px;
-    top: 20px;
-    height: 110px;
-}
 
-#video {
+
+#home-video {
+    display: grid;
+    background-color: aquamarine;
     height: 378px;
-    background-color: bisque;
-} 
-#home-img {
-    height: 378px;
-    background-color: cadetblue;
+    color: white;
+}
+#home-video h2 {font-size: 26px; margin-top: 40px;}
+#home-video h3 {font-size: 22px;}
+
+
+#ins-tittle {
+    background-color: #E2231A;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    padding: 35px 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-.box-container {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    margin-top: 50px;
+#ins-img{
+    height: 353px;
+    background-color: black;
 }
 
+#night-des {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
 
-#post-1 {
-    height: 168px;
-    width: 390px;
-    background-color: gray;
+#night-time-box {
+    background-color: #B3272D;
+    height: 148px;
+    border-radius: 7px;
+}
+#night-time-box p {
+    color: white; 
+    line-height: 20px; 
+    text-align: left; 
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+/* show button */
+
+#show-btn {
+    border: 2px solid #E2231A;
+    height: 44px;
+    background-color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+#show-btn a {color: #E2231A;}
+
+#home-map {
+    height: 296px;
+    background-color: brown;
+    margin-top: 25px;
+}
+
+#about-tittle {
+    background-color: red;
+    height: 118px;
+}
+
+#about-tittle h2{
+    text-align: center;
+    font-size: 30px;
+    padding: 30px 0;
+    margin-top: 30px;
+    color: white;
+}
+
+#about-des {
+    height: 204px;
+    background-color: grey;
+    margin-top: 15px;
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+}
+
+#learn-box {
+    height: 193px;
+    background-color: antiquewhite;
+    margin-top: 30px;
+}
+
+#lea-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#lea-btn button{
+    border: 3px solid #E2231A;
+    background-color: white;
+    width: 149px;
+    height: 44px;
+    border-radius: 7px;
+    text-align: center;
+    color: #E2231A;
 }
 
 #line {
-    border: 1px solid black;
+    width: 350px;
+    margin-top: 25px;
+}
+
+
+#c-w-containrer{
+    display: grid;
+}
+
+#boxes {
+    display: grid;
+    text-align: center;
+}
+
+.red-box {
+    border-radius: 7px;
+    height: 260px;
+    width: 280px;
+    background-color: #B3272D;
+    color: white;
+    margin-left: 80px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.red-box h3{
     margin-top: 20px;
-    width: 390px;
-    top: 200px;
-}
+} 
 
-#content-1 {
-    width: 390px;
-    height: 114px;
-    background-color: darkgrey;
-}
-#content-2 {
-    width: 390px;
-    height: 72px;
-    background-color: darkgrey;
-}
-
-#image {
-    background-color: aqua;
-    height: 378px;
+.cricle {
+    border-radius: 50%;
+    background-color: white;
+    height: 104px;
+    width: 104px;
     margin-top: 40px;
 }
 
+#red-line {
+    border: 3px solid #B3272D;
+}
+
+
+.cricle img { text-align: center; margin-top: 25px; margin-left: 10px;}
+
 footer {
-    height: 140px;
-    background-color: antiquewhite;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
-#footer-logo {
-    position: absolute;
-    left: 50px;
-    top: 25px;
+footer img {
+    width: 99px;
+    height: 79px;
+    
 }
-
 @media screen and (min-width: 768px) {
-    nav ul {
-        display: block;
+    #ham-menu img {display: none;}
+    header{
+        height: 76px;
+        background-color: grey;
     }
-    .menu-icon{ display: none;} 
-    #post-1{width: 964px;}
-    #line {width: 964px;}
-    #content-1 {width: 1200px; height: 150px;}
-    #content-2 {display: none;}
 
+    #header-logo {width: 210px; height: 60px; margin-left: 10px;} 
+
+    nav ul li a{display: contents;}
+
+    /* ins*/
+    #ins-tittle {
+        display: grid;
+        border-radius: 7px;
+        width: 471px;
+        font-size: 36px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #ins-img{
+        display: grid;
+        width: 552px;
+        height: 314px;
+        margin-top: 20px;
+    }
+
+    #night-des {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    
+    #night-time-box {
+        height: 206px;
+        width: 471px;
+    }
+    #night-time-box p {
+        line-height: 22px; 
+        margin-top: 45px;
+    }
+
+    #show-btn {
+        width: 344px;
+        background-color: white;
+        text-align: center;
+        padding: 15px 0;
+        margin-top: 20px;
+    }
+
+
+
+
+    #about-tittle {
+        height: 100px;
+        width: 973px;
+    }
+    
+    #about-tittle h2{
+        text-align: center;
+        font-size: 36px;
+        padding: 30px 0;
+        margin-top: 5px;
+    }
+    
+    #about-des {
+        width: 552px;
+        height: 299px;
+        background-color: grey;
+        margin-top: 15px;
+        padding: 30px 0;
+        text-align: center;
+        color: white;
+    }
+
+
+
+    footer nav {
+        margin-top: 20px;
+    }
+
+    footer img {
+        width: 150px;
+        height: 120px;
+        margin-top: 30px;
+    }
 }
