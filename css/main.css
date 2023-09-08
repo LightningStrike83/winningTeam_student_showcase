@@ -95,7 +95,7 @@ nav ul li a:hover {
 }
 
 #home-img {
-    height: 378px;
+    height: 500px;
     background-color: cadetblue;
 }
 
@@ -106,8 +106,18 @@ nav ul li a:hover {
 
 #date-details {
     background-color: azure;
-    padding-bottom: 33px;
     border-bottom: 5px solid black;
+}
+
+#show-schedule {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    border: 3px solid;
+}
+
+#schedule {
+    border: 3px solid black;
 }
 
 #about-program { 
