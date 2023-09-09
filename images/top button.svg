@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="56" viewBox="0 0 25 56">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 50px;
+        font-family: Arial-BoldMT, Arial;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <text id="top_button" data-name="top button" class="cls-1" transform="translate(0 45)"><tspan x="0" y="0">↑</tspan></text>
+</svg>

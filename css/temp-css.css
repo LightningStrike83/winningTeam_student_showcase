@@ -135,6 +135,7 @@ a:visited {
 }*/
 
 nav ul {
+    margin-top: 0;
     list-style-type: none;
     display: none;
 }
@@ -277,19 +278,21 @@ nav ul li a:hover {
 }
 
 #client-projects {
-    height: 200px;
-    background-color: orange;
+    height: 320px;
+    border: 3px solid #B3272D;
+    border-radius: 16px;
     margin-bottom: 33px;
 }
 
 #project-examples {
     background-color: blue;
-    height: 200px;
+    height: 400px;
     margin-bottom: 33px;
 }
 
 #testimonials {
     text-align: center;
+    color: #E2231A;
 }
 
 .client-arrows {
@@ -326,7 +329,7 @@ nav ul li a:hover {
 /* 6. Footer */
 
 footer {
-    height: 140px;
+    height: 500px;
     background-color: antiquewhite;
     display: flex;
     justify-content: space-between;
@@ -363,6 +366,10 @@ footer {
 .top-icon a {
     display: flex;
     align-items: center;
+}
+
+.client-footer-logo {
+    max-height: 79px;
 }
 
 /* 7. Media Queries */
@@ -409,4 +416,26 @@ footer {
         border-bottom: none;
     }
 
+    .client-footer-logo {
+        max-height: 167px;
+    }
+
+}
+
+.arrow {
+    width: 50px;
+    height: 112px;
+}
+
+.footer-line {
+    border-bottom: 10px solid #B3272D;
+}
+
+.nav-line {
+    border-right: 2px solid #646469;
+}
+
+#divider-client {
+    border-bottom: 5px solid #B3272D;
+    margin-bottom: 34px;
 }
