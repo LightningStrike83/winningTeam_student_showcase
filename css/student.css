@@ -1,0 +1,157 @@
+/* 1. General Styles */
+
+.hidden {
+    display: none;
+}
+
+/* 2. Index */
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    min-height: 100vh;
+    max-width: 1400px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* style header */
+header{
+    height: 70px;
+    background-color: grey;
+    display: grid;
+}
+#header-logo {
+    width: 150px;
+    margin-top: 15px;
+}
+
+nav ul {margin-top: 30px;}
+nav ul li {
+    display: inline;
+    margin-left: 10px;
+    
+}
+nav ul li a {font-size: 22px; color: #E2231A; display: none;}
+
+#ham-menu img{
+    width: 64px;
+    margin-top: 5px;
+}
+
+#stu-work-img {
+  height: 378px;
+  background-color: bisque;  
+}
+
+.stu-w-p-tittle {
+    background-color: #E2231A;
+    height: 186px;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+.stu-w-p-tittle h1{font-size: 36px; margin-top: 40px;}
+.stu-w-p-tittle p{font-size: 25px;}
+
+/* SHOW WORK BUTTON*/
+.show-w-btn {
+    background-color: white;
+    border: 2px solid #E2231A;
+    height: 44px;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+.show-w-btn a{color: #E2231A; }
+
+/* softwate icons */
+
+#so-icon-con{
+    background-color: #B3272D;
+    height: 423px;
+    margin-top: 40px;
+}
+
+#so-icon-con h3 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+}
+/*software boxes*/
+.sot-boxes{
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    margin-top: -130px;
+}
+
+#box-2 {margin-left: 60px;}
+
+
+
+
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+footer img {
+    width: 99px;
+    height: 79px;
+    
+}
+@media screen and (min-width: 768px) {
+    #ham-menu img {display: none;}
+    header{
+        height: 76px;
+        background-color: grey;
+    }
+
+    #header-logo {width: 210px; height: 60px; margin-left: 10px;} 
+
+    nav ul li a{display: contents;}
+
+
+    #stu-work-img {
+        height: 383px;
+      }
+    .stu-w-p-tittle {
+        font-size: 36px;
+        height: 100px;
+        width: 973px;
+    }
+    .stu-w-p-tittle p {display: none;}
+
+    .show-w-btn {display: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    footer nav {
+        margin-top: 20px;
+    }
+
+    footer img {
+        width: 150px;
+        height: 120px;
+        margin-top: 30px;
+    }
+}
