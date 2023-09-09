@@ -46,6 +46,9 @@ nav ul li a {font-size: 22px; color: #E2231A; display: none;}
   background-color: bisque;  
 }
 
+
+
+
 .stu-w-p-tittle {
     background-color: #E2231A;
     height: 186px;
@@ -83,6 +86,10 @@ nav ul li a {font-size: 22px; color: #E2231A; display: none;}
     text-align: center;
     margin-top: 50px;
 }
+
+/* hidde checkout pargraph */
+#check-out {display: none;}
+
 /*software boxes*/
 .sot-boxes{
     width: 100px;
@@ -91,9 +98,12 @@ nav ul li a {font-size: 22px; color: #E2231A; display: none;}
     margin-top: -130px;
 }
 
-#box-2 {margin-left: 60px;}
-
-
+.red-line {
+    color: #B3272D;
+    height: 6px;
+    background-color: #B3272D;
+    margin-top: 90px;
+}
 
 
 
@@ -107,6 +117,10 @@ footer img {
     height: 79px;
     
 }
+
+#stu-por-list-con p {display: none;}
+#row-1-des {display: none;}
+
 @media screen and (min-width: 768px) {
     #ham-menu img {display: none;}
     header{
@@ -122,26 +136,60 @@ footer img {
     #stu-work-img {
         height: 383px;
       }
+
+    #stu-work {
+        margin-right: 310px;
+        margin-bottom: 30px;
+      }
+      /* show the pargraph */
+    #check-out {
+        font-size: 25px;
+        text-align: center;
+        display: contents;
+        }
+    /* students work exmaples row-01 */
+    #stu-examples-row-1 {
+        display: blcok;
+        background-color: #B3272D;
+        height: 394px;
+        margin-top: 30px;
+    }
+
+    #stu-examples-row-1 .box {
+        margin-top: 15px;
+    }
+
+    #row-1-des {display: grid;}
+
+    .box {
+        height: 363px;
+        background-color: aliceblue;
+    }
     .stu-w-p-tittle {
         font-size: 36px;
         height: 100px;
         width: 973px;
     }
+
+    /* adjust tittle of porti */
+
     .stu-w-p-tittle p {display: none;}
 
     .show-w-btn {display: none;}
 
-
-
-
-
-
-
-
-
-
-
-
+    #stu-por-list-con{
+        background-color: #B3272D;
+        height: 430px;
+        margin-top: 30px;
+    }
+    #stu-por-list-con p {
+        display: block;
+        color: white;
+        font-size: 30px;
+        line-height: 35px;
+        margin-left: 50px;
+        margin-top: 30px;
+    }
 
 
 
