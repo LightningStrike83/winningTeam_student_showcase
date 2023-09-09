@@ -49,8 +49,14 @@ nav ul li a {font-size: 22px; color: #E2231A; display: none;}
     height: 378px;
     color: white;
 }
-#home-video h2 {font-size: 26px; margin-top: 40px;}
-#home-video h3 {font-size: 22px;}
+
+#ins-container {
+
+}
+
+
+
+
 
 
 #ins-tittle {
@@ -156,14 +162,7 @@ nav ul li a {font-size: 22px; color: #E2231A; display: none;}
 }
 
 
-#c-w-containrer{
-    display: grid;
-}
 
-#boxes {
-    display: grid;
-    text-align: center;
-}
 
 .red-box {
     border-radius: 7px;
@@ -176,9 +175,7 @@ nav ul li a {font-size: 22px; color: #E2231A; display: none;}
     text-align: center;
 }
 
-.red-box h3{
-    margin-top: 20px;
-} 
+
 
 .cricle {
     border-radius: 50%;
@@ -191,7 +188,6 @@ nav ul li a {font-size: 22px; color: #E2231A; display: none;}
 #red-line {
     border: 3px solid #B3272D;
 }
-
 
 .cricle img { text-align: center; margin-top: 25px; margin-left: 10px;}
 
@@ -217,17 +213,18 @@ footer img {
     nav ul li a{display: contents;}
 
     /* ins*/
+    #ins-container {display: block}
     #ins-tittle {
-        display: grid;
         border-radius: 7px;
-        width: 471px;
-        font-size: 36px;
+        width: 310px;
+        height: 70px;
+        font-size: 28px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
+    #ins-tittle h2 {margin-top: -10px;}
 
     #ins-img{
-        display: grid;
         width: 552px;
         height: 314px;
         margin-top: 20px;
@@ -262,6 +259,7 @@ footer img {
     #about-tittle {
         height: 100px;
         width: 973px;
+        
     }
     
     #about-tittle h2{
@@ -280,7 +278,6 @@ footer img {
         text-align: center;
         color: white;
     }
-
 
 
     footer nav {
