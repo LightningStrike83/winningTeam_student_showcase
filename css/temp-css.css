@@ -106,7 +106,6 @@ a:visited {
 /* 2. Nav */
 
 .header-nav {
-    height: 120px;
     background-color: pink;
     padding-left: 30px;
     align-items: center;
@@ -298,6 +297,7 @@ nav ul li a:hover {
 .client-arrows {
     display: flex;
     align-items: flex-end;
+    font-size: 58px;
 }
 
 #client-arrow-right {
@@ -383,7 +383,6 @@ footer {
     .nav_menu {
         display: flex;
         justify-content: space-evenly;
-        align-items: center;
     }
 
     .menu-icon{ 
@@ -438,4 +437,8 @@ footer {
 #divider-client {
     border-bottom: 5px solid #B3272D;
     margin-bottom: 34px;
+}
+
+nav ul li a {
+    font-size: 18px;
 }
