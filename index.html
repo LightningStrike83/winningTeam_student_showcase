@@ -3,77 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page- Fanshawe Interactive</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header>
-        <nav class="header-nav grid-con">
-            <div class="logo col-span-1 m-col-span-2">
-                <a href="index.html"><img class="header-logo" src="images/fanshawe_logo_long.png" alt="Fanshawe Logo"></a>
-            </div>
-            <ul class="nav_menu m-col-start-3 m-col-end-13">
-                <li><a href="index.html#home-img">Event Details</a></li>
-                <li><a href="client_projects.html">Client Projects</a></li>
-                <li><a href="student_work.html">Student Work</a></li>
-                <li><a href="student_work#.html">Portfolios</a></li>
+    <header class="grid-con">
+        <div id="header-logo">
+            <a href="#"><img src="images/fanshawe_logo.png" alt="header-logo"></a>
+        </div>
+        <nav class="m-col-start-4 m-col-end-13">
+            <ul>
+                <li><a href="#">EVENTS</a></li>
+                <li><a href="#">CLIENT WORK</a></li>
+                <li><a href="#">STUDENT WORK</a></li>
+                <li><a href="#">PORTFOLIOS</a></li>
             </ul>
-            <div class="menu-icon col-start-4 col-end-5">
-                <a href="#"><img src="images/bx-menu.svg" alt="Hamburger Menu" height="70px"></a>
-            </div>
         </nav>
+        <div id="ham-menu" class="col-start-4">
+            <img src="images/bx-menu.svg" alt="ham-menu">
+        </div>
+       
     </header>
-
     <main>
-        <section id="video" class="grid-con">
-            <p id="video-title" class="col-span-full m-col-span-8"><span id="fanshawe-video">INTERACTIVE MEDIA DESIGN</span> <br> FANSHAWE COLLEGE</p>
-            <video src="#"></video>
+        <!--video-->
+            <section id="home-video" class="grid-con">
+                <h2 >INTERCACTIVE MEDIA DESIGN</h2>
+                <h3 class="col-start-1">FANSHAWE COLLEGE</h3>
+            </section>
+
+        
+       <div id="night-container" class="grid-con">
+            <section id="tittle-container" class="col-span-full m-col-start-1 m-col-end-6">
+                <h2 id="ins-tittle">INDUSTRY NIGHT</h2>      
+            </section>
+
+            <section id="ins-img" class="col-span-full m-col-start-7 m-col-end-12">
+                
+            </section>
+
+            <p id="night-des" class="col-span-full m-col-start-1 m-col-end-5">The SDPA Industry Night for 2023 will showcase student projects and activities from the Interactive Media Design Program.Meet and mingle with faculty and students, tour the facilities, and hear about upcoming projects and programs in the School of Digital and Performing Arts.
+            </p>
+            <section id="night-time-box" class="col-span-full" >
+                <p>
+                    Date TBD, April 2024 <br>
+                    137 Dundas St <br>
+                    Fanshawe LDA Building <br>
+                    London, ON N6A 1E9 <br>
+                    THE GOOD FOUNDATION INC. THEATRE  
+                </p>
+            </section>
+            <section id="show-btn" class="col-span-full m-col-start-2 m-col-end-5">
+                <a href="#">SHOW SCHEDULE</a>
+            </section>
+            <!-- map-->
+            <section id="home-map" class="col-span-full m-col-start-7 m-col-end-13">
+        
+            </section>
+        </div>
+        
+            
+       </div>
+
+       <div class="grid-con" >
+            <section id="about-tittle" class="col-span-full m-col-start-2 m-col-end-12">
+            <h2>ABOUT INTERACTIVE MEDIA DESIGN</h2>
+            </section>
+
+            <section id="about-des" class="col-span-full m-col-start-7 m-col-end-12">
+                <p> <br>The Interactive Media Design program will professionally prepare students for an evolving job market in digital media design, development and production, providing comprehensive training in new media technologies with an emphasis on web application design, interactive rich media, and current technologies for developing usable, media-rich sites and applications.</p>
+            </section>
+
+            <section id="learn-box" class="col-span-full m-col-start-1 m-col-end-6">
+
+            </section>
+            <!-- learn -->
+        <section id="lea-btn">
+           <a href="#">LEARN MORE</a>
         </section>
+       </div>
+        
+       <hr id="line">
 
-        <section id="home-img" class="grid-con">
-            <h3 id="industry_title" class="col-span-full m-col-span-5">Industry Night</h3>
-            <img class="col-span-full m-col-start-7 m-col-end-12" src="#" alt="">
-            <p class="col-span-full m-col-start-1 m-col-end-6">Lorem Ipsum</p>
-            <p class="col-span-full m-col-start-1 m-col-end-5" id="date-details">Saturday April <br> 6:00pm - 9:00pm <br> Fanshawe Downtown Campus <br> 130 Dundas St. London, ON</p>
-            <div class="col-span-full m-col-start-1 m-col-end-4" id="show-schedule">
-                <div class="triangle"></div>
-                <p>Show Schedule</p>
-            </div>
-            <p class="col-span-full m-col-start-1 m-col-end-6" id="schedule">12:00-2:00 - Second-year students present projects to some industry guests and first-year students. <br> 4:00-4:30 - Industry members and guests arrive. <br> 4:30-5:30 - Student Spotlight presentations. <br> 5:30-6:30 - Food & Drinks, Mingle/Networking. <br> 6:30-8:00 - Industry members and guests head upstairs (420 and 422) for student portfolio viewing.</p>
+       <!-- client&st-work -->
+       <section class="red-box">
+        <section class="cricle">
+
         </section>
-
-        <section id="about-program" class="grid-con">
-            <h3 class="col-span-full m-col-start-2 m-col-end-12" id="about-title">ABOUT INTERACTIVE MEDIA DESIGN</h3>
-            <p class="col-span-full m-col-start-8 m-col-end-12" id="about-desc">Lorem Ipsum</p>
-            <video  class="col-span-full m-col-start-2 m-col-end-7" id="promo-video" src=""></video>
-            <a class="col-span-full m-col-start-8 m-col-end-12" href="https://www.fanshawec.ca/programs/idp3-interactive-media-design/next"><p class="" id="learn-more">LEARN MORE</p></a>
-        </section>
-
-        <section id="feature-links" class="grid-con">
-            <div id="client-work-index" class="col-span-full m-col-start-2 m-col-end-6">
-                <h3>CLIENT WORK & TESTIMONIALS</h3>
-                <img src="#" alt="">
-            </div>
-
-            <div id="student-work-index" class="col-span-full m-col-start-8 m-col-end-12">
-                <h3>STUDENT WORK & PORTFOLIOS</h3>
-                <img src="#" alt="">
-            </div>
-        </section>    
+    </section>
+       
+        
+      
+       
+       <hr id="red-line">
     </main>
-
-    <footer class="grid-con">
-        <div class="footer-logo col-span-1 m-col-span-2">
-            <a href="index.html"><img class="logo-footer" src="images/fanshawe_logo.png" alt="Fanshawe Footer Logo"></a>
-        </div>
-
-        <div class="top-icon col-start-4 col-end-5 m-col-start-11 m-col-end-13">
-            <a href="#video"><div class="triangle"></div><p class="top">Top</p></a>
-        </div>
+    <footer>
+        <nav class="m-col-start-3 m-col-end-10">
+            <ul>
+                <li><a href="#">EVENTS</a></li>
+                <li><a href="#">CLIENT WORK</a></li>
+                <li><a href="#">STUDENT WORK</a></li>
+                <li><a href="#">PORTFOLIOS</a></li>
+            </ul>
+        </nav>
+        <a href="#"> <img src="images/Fanshawe Logo.png" alt="footer-logo"></a>
+        
     </footer>
-
     <script src="js/class_list.js"></script>
     <script src="js/main.js"></script>
 </body>
