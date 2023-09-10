@@ -75,6 +75,8 @@ function openStudentLightbox() {
 
     document.querySelector('#lightbox-student').style.display = 'grid';
 
+    document.querySelector('.lb-pic').src = "images/student-" + studentLightbox + ".jpg";
+
     document.querySelector('#lb-title-student').textContent= project_members [studentLightbox].projectname
     document.querySelector('#lb-description').textContent= project_members [studentLightbox].description
     document.querySelector('#lb-team').textContent= project_members [studentLightbox].members
