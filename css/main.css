@@ -190,6 +190,12 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
+#show-schedule-m:hover {
+    color: white;
+    border: 5px solid white;
+    background-color: #E2231A;
+}
+
 #show-schedule-m p {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -246,6 +252,12 @@ nav ul li a:hover {
     justify-content: space-evenly;
     margin-bottom: 22px;
     cursor: pointer;
+}
+
+#show-schedule:hover {
+    color: white;
+    border: 5px solid white;
+    background-color: #E2231A;
 }
 
 #show-schedule p {
@@ -306,6 +318,12 @@ nav ul li a:hover {
     margin-bottom: 27px;
 }
 
+#learn-more:hover {
+    border: 5px solid white;
+    color: white;
+    background-color: #E2231A;
+}
+
 #index-line {
     border-bottom: 2px solid;
     margin-bottom: 28px;
@@ -338,6 +356,11 @@ nav ul li a:hover {
     margin-bottom: 30px;
     color: white;
     width: 280px;
+}
+
+#client-work-index:hover, #student-work-index:hover {
+    background-color: #E2231A;
+    transition: 0.5s ease-in;
 }
 
 #client-work-index img, #student-work-index img {
@@ -420,12 +443,58 @@ nav ul li a:hover {
     color: #E2231A;
 }
 
+#test-1 {
+    background-image: url(../images/industry_9/Industry_Night_CDPA_04.23.15_AL_36_jvikmp_c_scale\,w_877.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#test-2 {
+    background-image: url(../images/industry_8/Industry_Night_CDPA_04.23.15_AL_35_yuac5h_c_scale\,w_930.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#test-3 {
+    background-image: url(../images/industry_6/Industry_Night_CDPA_04.23.15_AL_32_jtmxlo_c_scale\,w_879.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+}
+
+#test-4 {
+    background-image: url(../images/industry_1/Industry_Night_CDPA_04.23.15_AL_01_vgplba_c_scale\,w_945.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#test-5 {
+    background-image: url(../images/image_10/Industry_Night_CDPA_04.23.15_AL_38_wrr6cw_c_scale\,w_839.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#test-1 p, #test-2 p, #test-3 p, #test-4 p, #test-5 p {
+    color: white;
+    font-weight: bold;
+    text-shadow: 3px 3px black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
 .client-arrows {
     color: #E2231A;
     display: flex;
     align-items: center;
     font-size: 58px;
     cursor: pointer;
+}
+
+.client-arrows:hover {
+    transition: 0.5s ease-in;
+    color: #b3272e;
 }
 
 #client-arrow-right {
@@ -578,6 +647,10 @@ nav ul li a:hover {
 .project-lightbox {
     background-color: #B3272D;
     border: 3px solid #E2231A;
+}
+
+.project-lightbox:hover {
+    background-color: #E2231A;
 }
 
 #so-icon-con{
@@ -755,6 +828,11 @@ footer img {
     #client-title {
         font-size: 50px;
         line-height: 1.25;
+    }
+
+    #test-3 {
+    
+        background-position: none;
     }
 
     #title-2024 {
