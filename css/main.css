@@ -13,11 +13,11 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
+    color: #E2231A;
 }
 
 a:visited {
-    color: black;
+    color: #E2231A;
 }
 
 .header-logo {
@@ -37,18 +37,22 @@ ul li a:visited {
 h3 {
     font-size: 26px;
     font-family: 'Gothic', 'Montserrat', 'Figtree', 'Arial', sans-serif;
-    line-height: 77px;
     color: #ffffff;
 }
 
 p {
     font-family: 'Gothic', 'Montserrat', 'Figtree', 'Arial', sans-serif;
+    line-height: 1.25;
 }
 
 /* 2. Nav */
 
+header {
+    display: flex;
+    align-items: center;
+}
+
 .header-nav {
-    height: 70px;
     padding-left: 30px;
     align-items: center;
     flex-direction: column;
@@ -73,12 +77,6 @@ p {
     height: 70px;
 }
 
-/*.header-logo:hover {
-    padding-top: 10px;
-    padding-bottom: 13px;
-    border-top: 3px solid white;
-}*/
-
 nav ul {
     margin-top: 0;
     list-style-type: none;
@@ -102,6 +100,29 @@ nav ul li a:hover {
 .menu-icon {
     display: flex;
     justify-content: space-around;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-icon.rotate {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.mobile-menu {
+    background-color: white;
+}
+
+.mobile-menu li {
+    list-style: none;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #E2231A;
+    color: #E2231A;
+    display: none;
+    font-size: 22px;
+}
+
+.mobile-menu li a:hover {
+    color: #B3272D;
 }
 
 /* 3. Index */
@@ -132,6 +153,8 @@ nav ul li a:hover {
     background-color: #E2231A;
     margin-bottom: 20px;
     text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 #industry-description {
@@ -177,23 +200,51 @@ nav ul li a:hover {
     display: none;
 }
 
+#map-mobile {
+    display: flex;
+    justify-self: center;
+}
+
+#map-desktop {
+    display: none;
+}
+
 #about-program { 
     margin-top: 50px;
-    background-color: red;
+    margin-bottom: 10px;
 }
 
 #about-title {
     text-align: center;
     font-size: 40px;
     font-weight: bold;
+    background-color: #E2231A;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#about-desc {
+    padding: 15px;
+    color: white;
+    background-color: #646469;
+    border-radius: 5px;
 }
 
 #learn-more {
-    height: 40px;
-    border: 3px solid white;
+    border: 5px solid #E2231A;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    color: #E2231A;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 27px;
+}
+
+#index-line {
+    border-bottom: 2px solid;
+    margin-bottom: 28px;
 }
 
 #line {
@@ -203,18 +254,6 @@ nav ul li a:hover {
     top: 200px;
 }
 
-#content-1 {
-    width: 390px;
-    height: 114px;
-    background-color: darkgrey;
-}
-
-#content-2 {
-    width: 390px;
-    height: 72px;
-    background-color: darkgrey;
-}
-
 #image {
     background-color: aqua;
     height: 378px;
@@ -222,36 +261,344 @@ nav ul li a:hover {
 }
 
 #feature-links {
-    height: 200px;
-    background-color: orange;
     padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #client-work-index, #student-work-index {
     text-align: center;
+    background-color: #B3272D;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    color: white;
+    height: 260px;
+    width: 280px;
 }
 
-#learn-box {
-    height: 193px;
-    background-color: antiquewhite;
-    margin-top: 30px;
-}
-
-#lea-btn {
-    border: 3px solid #E2231A;
+#client-work-index img, #student-work-index img {
     background-color: white;
-    width: 184px;
-    height: 44px;
-    border-radius: 7px;
-    text-align: center;
-    padding: 10px 0;
-    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
     margin-top: 20px;
 }
 
-#lea-btn a {
+#client-work-index h3, #student-work-index h3 {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#client-work-index p, #student-work-index p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* 4. Client Projects */
+
+#hero-con {
+    margin-top: 33px;
+    height: 378px;
+    background-image: url(../images/meeting.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 33px;
+}
+
+#client-title {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 2;
+}
+
+#title-2024 {
+    font-size: 36px;
+    background-color: #E2231A;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#project-desc {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 33px;
+    padding-right: 33px;
+    margin-bottom: 21px;
+}
+
+#client-projects {
+    height: 320px;
+    border: 3px solid #B3272D;
+    border-radius: 16px;
+    margin-bottom: 33px;
+}
+
+#project-examples {
+    margin-bottom: 33px;
+}
+
+#first-work, #second-work, #third-work {
+    margin-bottom: 43px;
+}
+
+#first-work img, #second-work img, #third-work img {
+    margin-bottom: 30px;
+}
+
+.project-description-text {
+    color: black;
+}
+
+#testimonials {
+    text-align: center;
     color: #E2231A;
 }
+
+.client-arrows {
+    color: #E2231A;
+    display: flex;
+    align-items: center;
+    font-size: 58px;
+}
+
+#client-arrow-right {
+    justify-content: flex-end;
+}
+
+.slide {
+    align-items: center;
+}
+
+.arrow {
+    width: 50px;
+    height: 112px;
+}
+
+.footer-line {
+    border-bottom: 10px solid #B3272D;
+}
+
+#divider-client {
+    border-bottom: 5px solid #B3272D;
+    margin-bottom: 34px;
+}
+
+/* 5. Student Page */
+
+#stu-work-img {
+    height: 378px;
+    background-image: url(../images/student-hero.png);
+    background-position: center;
+    margin-bottom: 55px;
+}
+
+#student-hero-heading {
+    color: white;
+    font-size: 22px;
+    line-height: 2;
+}
+
+#hero-bold {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.stu-w-p-title {
+    color: white;
+    text-align: center;
+}
+
+.stu-w-p-title h3 {
+    background-color: #E2231A;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.stu-w-p-title p {
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+
+.show-w-btn {
+    background-color: white;
+    border: 5px solid #E2231A;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.show-w-btn p {
+    color: #E2231A; 
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.work-text {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #E2231A;
+}
+
+#stu-examples-row-1, #stu-examples-row-2 {
+    margin-bottom: 30px;
+    display: none;
+}
+
+.example-images {
+    margin-bottom: 20px;
+}
+
+#stu-por-list-con {
+    margin-bottom: 30px;
+}
+
+#stu-por-list-con a {
+    display: none;
+    color: white;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 5px;
+}
+
+#stu-por-list-con a:hover {
+    text-decoration: underline;
+}
+
+.name-column {
+    text-align: center;
+    background-color: #B3272D;
+}
+
+#year-selector {
+    display: none;
+    flex-direction: row;
+    background-color: #B3272D;
+    color: white;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.year:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#so-icon-con{
+    background-color: #B3272D;
+}
+
+#so-icon-con h3 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 26px;
+    font-weight: bold;
+}
+
+#software-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.sot-boxes img {
+    max-height: 100px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* 6. Footer */
+
+.nav-line {
+    border-bottom: 10px solid #B3272D;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+footer img {
+    margin-top: 30px;
+    width: 99px;
+    height: 79px;
+    
+}
+
+/* 7. Lightboxes */
+
+#lightbox-client {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: #b3272e88;
+    background-repeat: no-repeat;
+
+    background-position: left;
+    z-index: 51;
+}
+
+.lb_close {
+    color: black;
+    font-size: 80px;
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.lb_close:visited {
+    color: black;
+}
+
+.lb_close:hover {
+    opacity: 0.5; 
+}
+
+.lb-text {
+    display: flex;
+    color: white;
+}
+
+.lb-title {
+    background-color: #E2231A;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+/* Footer */
+
 
 #line {
     width: 350px;
@@ -282,37 +629,29 @@ nav ul li a:hover {
 }
 
 
-.cricle {
+.circle {
     border-radius: 50%;
     background-color: white;
     height: 104px;
     width: 104px;
-    margin-top: 25px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: baseline;
 }
 
 #red-line {
     border: 3px solid #B3272D;
 }
 
-.cricle img { 
-    text-align: center; 
-    margin-top: 25px; 
-    margin-left: 10px;
-}
+/* Media Queries */
 
-footer {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-
-footer img {
-    width: 99px;
-    height: 79px;
-    
-}
 @media screen and (min-width: 768px) {
+
+    li:not(:last-child) {
+        border-right: 2px solid #646469;
+    }
 
     .menu-icon {
         display: none;
@@ -331,37 +670,74 @@ footer img {
     }
 
     .nav-menu {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    #industry-title {
-        text-align: left;
-        height: 100px;
-    }
-
-    /* ins*/
-    #ins-container {
-        display: block
-    }
-
-    #ins-tittle {
-        border-radius: 7px;
-        width: 310px;
-        height: 70px;
-        font-size: 28px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    #ins-tittle {
-        margin-top: 35px; 
+        display: inline-block;
         text-align: center;
     }
 
-    #tittle-container p {
-        margin-top: 50px;
+    #industry-title {
+        height: 100px;
     }
 
+    #map-mobile {
+        display: none;
+    }
+    
+    #map-desktop {
+        display: flex;
+    }
+
+    #about-desc {
+        padding-top: 45px;
+        padding-bottom: 25px;
+        padding-left: 33px;
+        padding-right: 33px;
+    }
+
+    #feature-links {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #client-title {
+        font-size: 50px;
+        line-height: 1.25;
+    }
+
+    #title-2024 {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        justify-content: left;
+        padding-left: 50px;
+    }
+
+    #stu-por-list-con a {
+        display: block;
+        font-family: 30px;
+    }
+
+    #stu-examples-row-1, #stu-examples-row-2 {
+        display: flex;
+    }
+
+    .show-w-btn {
+        display: none;
+    }
+
+    #portfolio-h3 {
+        text-align: left;
+        padding-left: 120px;
+    }
+
+    #work-h3 {
+        text-align: right;
+        padding-right: 120px;
+    }
+
+    #year-selector {
+        display: flex;
+    }
+
+    /* ins*/
     #ins-img{
         width: 552px;
         height: 314px;
@@ -396,19 +772,6 @@ footer img {
         width: 552px;
         height: 340px;
         margin-top: -270px;
-    }
-
-
-    #about-tittle {
-        height: 100px;
-        width: 973px;
-        
-    }
-    
-    #about-tittle h2{
-        text-align: center;
-        font-size: 36px;
-       
     }
     
     #about-con {
@@ -457,16 +820,6 @@ footer img {
 
     .red-box h3 {
         font-size: 18px;
-    }
-    
-    
-    .cricle {
-        border-radius: 50%;
-        background-color: white;
-        height: 104px;
-        width: 104px;
-        margin-top: 25px;
-        text-align: center;
     }
 
 

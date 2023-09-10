@@ -3,169 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studetnt work</title>
+    <title>Student Work- Fanshawe Interactive</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/student.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="grid-con">
-        <div id="header-logo">
-            <a href="#"><img src="images/fanshawe_logo.png" alt="header-logo"></a>
-        </div>
-        <nav class="m-col-start-4 m-col-end-13">
-            <ul>
-                <li><a href="#">EVENTS</a></li>
-                <li><a href="#">CLIENT WORK</a></li>
-                <li><a href="#">STUDENT WORK</a></li>
-                <li><a href="#">PORTFOLIOS</a></li>
+    <header>
+        <nav class="header-nav grid-con">
+            <div class="logo col-span-1 m-col-span-2">
+                <a href="index.html"><img class="header-logo" src="images/fanshawe_logo_long.png" alt="Fanshawe Logo"></a>
+            </div>
+            <ul class="nav-menu m-col-start-3 m-col-end-13">
+                <li><a href="index.html#event-information">EVENTS</a></li>
+                <li><a href="client_projects.html">CLIENT WORK</a></li>
+                <li><a href="student.html">STUDENT WORK</a></li>
+                <li><a href="student.html#stu-por-list-con">PORTFOLIOS</a></li>
             </ul>
+            <div class="menu-icon col-start-4 col-end-5">
+                <a href="#"><img class="hamburger-icon" src="images/bx-menu.svg" alt="Hamburger Menu"></a>
+            </div>
+
+            <div class="mobile-menu col-start-3 col-end-5">
+                    <li><a href="index.html#home-img">EVENTS</a></li>
+                    <li><a href="client_projects.html">CLIENT WORK</a></li>
+                    <li><a href="student_work.html">STUDENT WORK</a></li>
+                    <li><a href="student_work#.html">PORTFOLIOS</a></li>
+            </div>
         </nav>
-        <div id="ham-menu" class="col-start-4">
-            <img src="images/bx-menu.svg" alt="ham-menu">
-        </div>
-       
     </header>
+    
     <main>
         <section id="stu-con" class="grid-con">
             <section id="stu-work-img" class="col-span-full m-col-span-full">
-                <img src="" alt="">
-                <p>Student work</p>
-                <p>Title Of project</p>
+                <p id="student-hero-heading" class="col-span-full m-col-span-8"><span id="hero-bold">STUDENT PROJECTS</span> <br> AND WHERE TO FIND THEM</p>
             </section>
         </section>
-        <!-- tittle-work -->
-       <section class="grid-con stu-w-p-tittle" id="stu-work">
-        <h1 class="col-span-full">Student Work </h1>
+
+       <section class="grid-con stu-w-p-title" id="stu-work">
+        <h3 class="col-span-full m-col-span-10" id="work-h3">Student Work</h3>
         <p class="col-span-full">Check out all our students work and portfolios by clicking on any piece of work.</p>
        </section>
-       <section class="grid-con" id="check-out">
-            <p class="m-col-start-3 m-col-end-10"> Check out all our students work and portfolios by clicking on any piece of work.</p>
+
+       <section id="work-button" class="grid-con">
+            <div class="show-w-btn col-start-2 col-end-4">
+                <p>SHOW WORK</p>
+            </div>
        </section>
 
-        <!--desktop examples-->
-       <!-- first-row of examples -->
        <section id="stu-examples-row-1" class="grid-con">
-            <section class="box m-col-start-1 m-col-end-5">
+            <div class="col-span-full m-col-span-4">
+                <img class="example-images"
+                    sizes="(max-width: 1200px) 100vw, 1200px"
+                    srcset="
+                    images/glasses-image/student-page-glasses_iwvdyk_c_scale_w_1380_pkzwyn_c_scale,w_200.jpg 200w,
+                    images/glasses-image/student-page-glasses_iwvdyk_c_scale_w_1380_pkzwyn_c_scale,w_595.jpg 595w,
+                    images/glasses-image/student-page-glasses_iwvdyk_c_scale_w_1380_pkzwyn_c_scale,w_881.jpg 881w,
+                    images/glasses-image/student-page-glasses_iwvdyk_c_scale_w_1380_pkzwyn_c_scale,w_1117.jpg 1117w,
+                    images/glasses-image/student-page-glasses_iwvdyk_c_scale_w_1380_pkzwyn_c_scale,w_1200.jpg 1200w"
+                    src="images/glasses-image/student-page-glasses_iwvdyk_c_scale_w_1380_pkzwyn_c_scale,w_1200.jpg"
+                    alt="Project 1">
+                <p class="work-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+            </div>
 
-            </section>
-            <section class="box m-col-start-5 m-col-end-9">
+            <div class="col-span-full m-col-span-4">
+                <img class="example-images"
+                    sizes="(max-width: 358px) 100vw, 358px"
+                    srcset="
+                    images/guy-coding/guy-coding_sguofe_c_scale,w_200.png 200w,
+                    images/guy-coding/guy-coding_sguofe_c_scale,w_282.png 282w,
+                    images/guy-coding/guy-coding_sguofe_c_scale,w_356.png 356w,
+                    images/guy-coding/guy-coding_sguofe_c_scale,w_358.png 358w"
+                    src="images/guy-coding/guy-coding_sguofe_c_scale,w_358.png"
+                    alt="Project 2">
+                <p class="work-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+            </div>
 
-            </section>
-            <section class="box m-col-start-9 m-col-end-13">
-
-            </section>
-       </section>
-       <!-- add description -->
-       <section id="row-1-des" class="grid-con">
-        <p class="m-col-start-1 m-col-end-5">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
-        <p class="m-col-start-5 m-col-end-9">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
-        <p class="m-col-start-9 m-col-end-13">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
-       </section>
-
-
-       <!-- second-row of examples -->
-       <section id="stu-examples-row-1" class="grid-con">
-            <section class="box m-col-start-1 m-col-end-5">
-
-            </section>
-            <section class="box m-col-start-5 m-col-end-9">
-
-            </section>
-            <section class="box m-col-start-9 m-col-end-13">
-
-            </section>
+            <div class="col-span-full m-col-span-4">
+                <img class="example-images"
+                    sizes="(max-width: 1200px) 100vw, 1200px"
+                    srcset="
+                    images/signup-code/student-page-signup_bex1mw_c_scale_w_1380_qf9x5v_c_scale,w_200.jpg 200w,
+                    images/signup-code/student-page-signup_bex1mw_c_scale_w_1380_qf9x5v_c_scale,w_660.jpg 660w,
+                    images/signup-code/student-page-signup_bex1mw_c_scale_w_1380_qf9x5v_c_scale,w_1063.jpg 1063w,
+                    images/signup-code/student-page-signup_bex1mw_c_scale_w_1380_qf9x5v_c_scale,w_1200.jpg 1200w"
+                    src="images/signup-code/student-page-signup_bex1mw_c_scale_w_1380_qf9x5v_c_scale,w_1200.jpg"
+                    alt="Project 3">
+                <p class="work-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+            </div>
         </section>
-   <!-- add second row description -->
-    <section id="row-1-des" class="grid-con">
-            <p class="m-col-start-1 m-col-end-5">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
-            <p class="m-col-start-5 m-col-end-9">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
-            <p class="m-col-start-9 m-col-end-13">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
-    </section>
+
+        <section id="stu-examples-row-2" class="grid-con">
+            <div class="col-span-full m-col-span-4">
+                <img class="example-images"
+                    sizes="(max-width: 1200px) 100vw, 1200px"
+                    srcset="
+                    images/code-image/student-page-code_qfbqta_c_scale_w_1380_vnc81h_c_scale,w_200.jpg 200w,
+                    images/code-image/student-page-code_qfbqta_c_scale_w_1380_vnc81h_c_scale,w_435.jpg 435w,
+                    images/code-image/student-page-code_qfbqta_c_scale_w_1380_vnc81h_c_scale,w_832.jpg 832w,
+                    images/code-image/student-page-code_qfbqta_c_scale_w_1380_vnc81h_c_scale,w_1068.jpg 1068w,
+                    images/code-image/student-page-code_qfbqta_c_scale_w_1380_vnc81h_c_scale,w_1200.jpg 1200w"
+                    src="images/code-image/student-page-code_qfbqta_c_scale_w_1380_vnc81h_c_scale,w_1200.jpg"
+                    alt="Project 4">
+                <p class="work-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+            </div>
+
+            <div class="col-span-full m-col-span-4">
+                <img class="example-images"
+                    sizes="(max-width: 1200px) 100vw, 1200px"
+                    srcset="
+                    images/desk-hand/student-page-hand_qbmvzf_c_scale_w_1380_leelhw_c_scale,w_200.jpg 200w,
+                    images/desk-hand/student-page-hand_qbmvzf_c_scale_w_1380_leelhw_c_scale,w_665.jpg 665w,
+                    images/desk-hand/student-page-hand_qbmvzf_c_scale_w_1380_leelhw_c_scale,w_938.jpg 938w,
+                    images/desk-hand/student-page-hand_qbmvzf_c_scale_w_1380_leelhw_c_scale,w_1200.jpg 1200w"
+                    src="images/desk-hand/student-page-hand_qbmvzf_c_scale_w_1380_leelhw_c_scale,w_1200.jpg"
+                    alt="Project 5">
+                <p class="work-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+            </div>
+
+            <div class="col-span-full m-col-span-4">
+                <img class="example-images"
+                    sizes="(max-width: 1200px) 100vw, 1200px"
+                    srcset="
+                    images/wireframe/student-page-wireframe_xqcxle_c_scale_w_1400_thxkhp_c_scale,w_200.jpg 200w,
+                    images/wireframe/student-page-wireframe_xqcxle_c_scale_w_1400_thxkhp_c_scale,w_749.jpg 749w,
+                    images/wireframe/student-page-wireframe_xqcxle_c_scale_w_1400_thxkhp_c_scale,w_1193.jpg 1193w,
+                    images/wireframe/student-page-wireframe_xqcxle_c_scale_w_1400_thxkhp_c_scale,w_1200.jpg 1200w"
+                    src="images/wireframe/student-page-wireframe_xqcxle_c_scale_w_1400_thxkhp_c_scale,w_1200.jpg"
+                    alt="Project 6">
+                <p class="work-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+            </div>
+        </section>
       
        
-
-
-       <!-- show work btn-->
-       <section class="grid-con">
-        <section class="show-w-btn col-start-2 col-end-4">
-            <a href="#">SHOW WORK</a>
-       </section>
-       </section>
-       
-       <!--tittle portfolio-->
-       <section class="grid-con stu-w-p-tittle" id="portfolio-tittle">
-        <h1 class="col-span-full">Student Portfolio </h1>
-        <p class="col-span-full">Check out all our students work and portfolios by clicking on any piece of work.</p>
+       <section class="grid-con stu-w-p-title" id="portfolio-title">
+        <h3 class="col-span-full m-col-start-3 m-col-end-13" id="portfolio-h3">Student Portfolio </h3>
+        <p class="col-span-full">Click on a year to select a graduating list of students, and click on their name to be taken to their portfolio website.</p>
        </section>
 
-
-
-       <!-- show button -->
-       <section class="grid-con">
-        <section class="show-w-btn col-start-2 col-end-4">
-            <a href="#">SHOW WORK</a>
-       </section>
+       <section id="portfolio-button" class="grid-con">
+            <div class="show-w-btn col-start-2 col-end-4">
+                <p>SHOW PORTFOLIOS</p>
+            </div>
        </section>
 
-       <!-- desktop students portfolios -->
        <section id="stu-por-list-con" class="grid-con">
-            <section class="m-col-start-1 m-col-end-3">
-            <p >Abbott, Spencer</p>
-            <p>Assi, Mirdan</p>
-            <p>Carriere, Ezra</p>
-            <p>Caspe, Kirk</p>
-            </section>
-            <section class="m-col-start-5 m-col-end-8">
-            <p >Chen, Chao</p>
-            <p>Chicoine, Jasmine,</p>
-            <p>Tiago Da,Silva Witt</p>
-            <p>Amaral Davies,Lorina</p>
-            </section>
+            <div id="year-selector" class="col-span-full">
+                <p class="year" id="year-2024" data-member="0">2024</p>
+                <p class="year" id="year-2023" data-member="1">2023</p>
+                <p class="year" id="year-2022" data-member="2">2022</p>
+            </div>
 
-            <section class="m-col-start-9 m-col-end-12">
-                <p >Duan,
-                    Jintao</p>
-                <p>Michelle Paola, 
-                    Duque De La Rosa</p>
-                <p>Ghimire,
-                    Suyog</p>
-                <p>Ghirmire,
-                    Sen</p>    
-                </section>
+            <div class="col-span-1 m-col-span-3 name-column">
+                <a id="name-1" href="#"></a>
+                <a id="name-2" href="#"></a>
+                <a id="name-3" href="#"></a>
+                <a id="name-4" href="#"></a>
+            </div>
+            <div class="col-span-1 m-col-span-3 name-column">
+                <a id="name-5" href="#"></a>
+                <a id="name-6" href="#"></a>
+                <a id="name-7" href="#"></a>
+                <a id="name-8" href="#"></a>
+            </div>
+
+            <div class="col-span-1 m-col-span-3 name-column">
+                <a id="name-9" href="#"></a>
+                <a id="name-10" href="#"></a>
+                <a id="name-11" href="#"></a>
+                <a id="name-12" href="#"></a>    
+            </div>
+
+            <div class="col-span-1 m-col-span-3 name-column">
+                <a id="name-13" href="#"></a>
+                <a id="name-14" href="#"></a>
+                <a id="name-15" href="#"></a>
+                <a id="name-16" href="#"></a>    
+            </div>
        </section>
 
-       
-
-
-       <!--software icons-->
        <section id="so-icon-con" class="grid-con">
-        <h3 class="col-start-1 col-end-4">SOFTWARE TAUGHT</h3>
-            <section class="sot-boxes col-start-1 col-end-2">
-                <img src="images/fanshawe_logo.png" alt="">
-            </section>
-
-            <section class="sot-boxes col-start-2 col-end-3">
-                <img src="images/fanshawe_logo.png" alt="">
-            </section>
-
-            <section class="sot-boxes col-start-3 col-end-4">
-                <img src="images/fanshawe_logo.png" alt="">
-            </section>
-
-            <section class="sot-boxes col-start-1 col-end-2">
-                <img src="images/fanshawe_logo.png" alt="">
-            </section>
-
-            <section class="sot-boxes col-start-2 col-end-3">
-                <img src="images/fanshawe_logo.png" alt="">
-            </section>
-
-            <section class="sot-boxes col-start-3 col-end-4">
-                <img src="images/fanshawe_logo.png" alt="">
-            </section>
-            
-            
+            <h3 class="col-span-full">SOFTWARE TAUGHT</h3>
+            <div id="software-icons" class="col-span-full">
+                <div class="sot-boxes">
+                    <img src="images/adobe_creative_cloud.png" alt="Adobe Creative Cloud icon">
+                </div>
+    
+                <div class="sot-boxes">
+                    <img src="images/cinema-4d.png" alt="Cinema 4D icon">
+                </div>
+    
+                <div class="sot-boxes">
+                    <img src="images/git-bash.png" alt="Git Bash icon">
+                </div>
+    
+                <div class="sot-boxes">
+                    <img src="images/github-logo.png" alt="Github icon">
+                </div>
+    
+                <div class="sot-boxes">
+                    <img src="images/node-js.png" alt="Node icon">
+                </div>
+    
+                <div class="sot-boxes">
+                    <img src="images/visual-studio-code.png" alt="">
+                </div>
+            </div>
        </section>
 
     </main>
@@ -175,17 +221,17 @@
     <footer>
         <nav class="m-col-start-3 m-col-end-10">
             <ul>
-                <li><a href="#">EVENTS</a></li>
-                <li><a href="#">CLIENT WORK</a></li>
-                <li><a href="#">STUDENT WORK</a></li>
-                <li><a href="#">PORTFOLIOS</a></li>
+                <li><a href="index.html#home-img">EVENTS</a></li>
+                <li><a href="client_projects.html">CLIENT WORK</a></li>
+                <li><a href="student_work.html">STUDENT WORK</a></li>
+                <li><a href="student_work#.html">PORTFOLIOS</a></li>
             </ul>
         </nav>
-        <a href="#"> <img src="images/Fanshawe Logo.png" alt="footer-logo"></a>
-        
+        <a href="#"> <img src="images/fanshawe_logo.png" alt="Footer Logo"></a>
     </footer>
     
     <script src="js/class_list.js"></script>
+    <script src="js/student.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
