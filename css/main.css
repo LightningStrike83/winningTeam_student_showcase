@@ -733,6 +733,10 @@ footer img {
         padding-right: 120px;
     }
 
+    #year-selector {
+        display: flex;
+    }
+
     /* ins*/
     #ins-img{
         width: 552px;
