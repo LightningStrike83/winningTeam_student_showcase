@@ -24,8 +24,8 @@ header{
     display: grid;
 }
 #header-logo {
-    width: 150px;
-    margin-top: 15px;
+    width: 60px;
+    margin-top: 10px;
 }
 
 nav ul {margin-top: 30px;}
@@ -78,6 +78,7 @@ nav ul li a {font-size: 22px; color: #E2231A; display: none;}
     background-color: #B3272D;
     height: 423px;
     margin-top: 40px;
+    padding-left: 90px;
 }
 
 #so-icon-con h3 {
@@ -85,18 +86,18 @@ nav ul li a {font-size: 22px; color: #E2231A; display: none;}
     font-size: 40px;
     text-align: center;
     margin-top: 50px;
+    margin-left: 40px;
 }
 
 /* hidde checkout pargraph */
 #check-out {display: none;}
 
-/*software boxes*/
 .sot-boxes{
-    width: 100px;
     height: 100px;
     background-color: gray;
-    margin-top: -130px;
 }
+
+#box-1 {margin-left: 40px;}
 
 .red-line {
     color: #B3272D;
@@ -191,7 +192,7 @@ footer img {
         margin-top: 30px;
     }
 
-
+    #so-icon-con {display: none;}
 
     footer nav {
         margin-top: 20px;
