@@ -23,7 +23,7 @@
                 <div class="nav-line"></div>
                 <li><a href="client_projects.html">CLIENT WORK</a></li>
                 <div class="nav-line"></div>
-                <li><a href="student_work.html">STUDENT WORK</a></li>
+                <li><a href="student.html">STUDENT WORK</a></li>
                 <div class="nav-line"></div>
                 <li><a href="student_work#.html">PORTFOLIOS</a></li>
             </ul>
@@ -41,17 +41,23 @@
     <section class="grid-con" id="project-examples">
         <h3 id="title-2024" class="col-span-full m-col-start-1 m-col-end-11">2024 Client Project</h3>
         <p id="project-desc" class="col-span-full m-col-start-3 m-col-end-11">Check out all our new client work done by students from the 2023-2024 class.</p>
-        <div class="col-span-full m-col-span-4">
-            <img src="#" alt="">
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+        <div id="first-work" class="col-span-full m-col-span-4" data-member="0">
+            <a href="#lightbox-client">
+                <img src="#" alt="">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+            </a>
         </div>
-        <div class="col-span-full m-col-span-4">
-            <img src="#" alt="">
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+        <div id="second-work" class="col-span-full m-col-span-4" data-member="1">
+            <a href="#lightbox-client">
+                <img src="#" alt="">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+            </a>
         </div>
-        <div class="col-span-full m-col-span-4">
-            <img src="#" alt="">
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+        <div id="third-work" class="col-span-full m-col-span-4" data-member="2">
+            <a href="#lightbox-client">
+                <img src="#" alt="">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+            </a>
         </div>
     </section>
 
@@ -63,7 +69,11 @@
         <h2 class="hidden">Previous Clients</h2>
         <div id="client-arrow-left" class="col-span-1 m-col-start-2 m-col-end-3 client-arrows">&#9664;</div>
         <div id="client-arrow-right" class="col-start-4 col-end-5 m-col-start-11 m-col-end-12 client-arrows">&#9654;</div>
-        <p class="col-span-full" id="testimonials">"Remarkable!" -Mr. Sukizo</p>
+        <p class="col-span-full testimonials" data-member="0" id="test1"></p>
+        <p class="col-span-full testimonials" data-member="1" id="test2"></p>
+        <p class="col-span-full testimonials" data-member="2" id="test3"></p>
+        <p class="col-span-full testimonials" data-member="3" id="test4"></p>
+        <p class="col-span-full testimonials" data-member="4" id="test5"></p>
     </section>
 
     <footer class="grid-con">
@@ -92,6 +102,19 @@
         </div>
     </footer>
 
+    <section class="lightbox" id="lightbox-client" class="grid-con">
+        <a href="" class="lb_close col-start-4 col-end-5 m-col-start-12 m-col-end-13">X</a>
+
+        <h3 class="lb-title col-span-full" id="lb-title-client"></h3>
+        <img class="lb-pic col-start-2 col-end-4 m-col-start-4 m-col-end-9" src="" alt="">
+        <p id="lb-team" class="lb-text col-start-1">Test</p>
+        <p id="lb-software" class="lb-text col-start-1">Test</p>
+        <p id="lb-idea" class="lb-text col-start-1">Test</p>
+        <p id="lb-problems" class="lb-text col-start-1">Test</p>
+        <p id="lb-solutions" class="lb-text col-start-1">Test</p>
+    </section>
+
+    <script src="js/client-work.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
