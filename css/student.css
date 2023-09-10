@@ -1,101 +1,16 @@
 /* 1. General Styles */
 
-.hidden {
-    display: none;
-}
-
-body {
-    margin: 0 auto;
-    padding: 0;
-    min-height: 100vh;
-    max-width: 1400px;
-}
-
-a {
-    text-decoration: none;
-}
 
 /* 2. Header */
 
-header{
-    height: 70px;
-    background-color: grey;
-    display: grid;
-}
-#header-logo {
-    width: 60px;
-    margin-top: 10px;
-}
-
-nav ul {margin-top: 30px;}
-nav ul li {
-    display: inline;
-    margin-left: 10px;
-    
-}
-nav ul li a {font-size: 22px; color: #E2231A; display: none;}
-
-#ham-menu img{
-    width: 64px;
-    margin-top: 5px;
-}
-
-#stu-work-img {
-  height: 378px;
-  background-color: bisque;  
-}
 
 /* 3. Index */
-
-
-.stu-w-p-tittle {
-    background-color: #E2231A;
-    height: 186px;
-    color: white;
-    text-align: center;
-    margin-top: 40px;
-}
-.stu-w-p-tittle h1{font-size: 36px; margin-top: 40px;}
-.stu-w-p-tittle p{font-size: 25px;}
-
 /* SHOW WORK BUTTON*/
-.show-w-btn {
-    background-color: white;
-    border: 2px solid #E2231A;
-    height: 44px;
-    font-size: 18px;
-    text-align: center;
-    padding-top: 10px;
-    border-radius: 5px;
-    margin-top: 40px;
-}
-.show-w-btn a{color: #E2231A; }
 
 /* softwate icons */
 
-#so-icon-con{
-    background-color: #B3272D;
-    height: 423px;
-    margin-top: 40px;
-    padding-left: 90px;
-}
-
-#so-icon-con h3 {
-    color: white;
-    font-size: 40px;
-    text-align: center;
-    margin-top: 50px;
-    margin-left: 40px;
-}
 
 /* hidde checkout pargraph */
-#check-out {display: none;}
-
-.sot-boxes{
-    height: 100px;
-    background-color: gray;
-}
-
 #box-1 {margin-left: 40px;}
 
 .red-line {
@@ -106,27 +21,7 @@ nav ul li a {font-size: 22px; color: #E2231A; display: none;}
 }
 
 
-
-footer {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-footer img {
-    width: 99px;
-    height: 79px;
-    
-}
-
-#stu-por-list-con p {display: none;}
-#row-1-des {display: none;}
-
 @media screen and (min-width: 768px) {
-    #ham-menu img {display: none;}
-    header{
-        height: 76px;
-        background-color: grey;
-    }
 
     #header-logo {width: 210px; height: 60px; margin-left: 10px;} 
 
@@ -138,7 +33,6 @@ footer img {
       }
 
     #stu-work {
-        margin-right: 310px;
         margin-bottom: 30px;
       }
       /* show the pargraph */
@@ -149,9 +43,6 @@ footer img {
         }
     /* students work exmaples row-01 */
     #stu-examples-row-1 {
-        display: blcok;
-        background-color: #B3272D;
-        height: 394px;
         margin-top: 30px;
     }
 
@@ -173,25 +64,10 @@ footer img {
 
     /* adjust tittle of porti */
 
-    .stu-w-p-tittle p {display: none;}
+    
 
-    .show-w-btn {display: none;}
+    
 
-    #stu-por-list-con{
-        background-color: #B3272D;
-        height: 430px;
-        margin-top: 30px;
-    }
-    #stu-por-list-con p {
-        display: block;
-        color: white;
-        font-size: 30px;
-        line-height: 35px;
-        margin-left: 50px;
-        margin-top: 30px;
-    }
-
-    #so-icon-con {display: none;}
 
     footer nav {
         margin-top: 20px;
