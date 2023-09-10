@@ -271,7 +271,6 @@ nav ul li a:hover {
 }
 
 #title-2024 {
-    text-align: center;
     font-weight: bold;
     padding-top: 5px;
 }
@@ -441,4 +440,36 @@ footer {
 
 nav ul li a {
     font-size: 18px;
+}
+
+#lightbox-client {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: #B3272D;
+    background-repeat: no-repeat;
+
+    background-position: left;
+    z-index: 51;
+}
+
+.lb_close {
+    color: black;
+    font-size: 80px;
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.lb_close:hover {
+    opacity: 0.5; 
+}
+
+.lb-text {
+    display: flex;
 }
