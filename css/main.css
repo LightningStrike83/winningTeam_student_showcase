@@ -129,10 +129,29 @@ nav ul li a:hover {
 /* 3. Index */
 
 #video {
-    height: 378px;
-    background-color: bisque;
+    height: 450px;
     margin-bottom: 27px;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    z-index: -2;
 } 
+
+#beautiful-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 70%;
+}
+
+#video-title {
+    color: white;
+    text-shadow: 3px 3px black;
+}
 
 .hero-title-full {
     font-size: 24px;
@@ -304,6 +323,10 @@ nav ul li a:hover {
     color: white;
     background-color: #646469;
     border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#promo-video {
     margin-bottom: 20px;
 }
 
