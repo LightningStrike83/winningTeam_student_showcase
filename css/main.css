@@ -94,6 +94,7 @@ nav ul li:first-of-type {
 }
 
 nav ul li a:hover {
+    color: #b3272e;
     text-decoration: underline;
 }
 
@@ -227,7 +228,7 @@ nav ul li a:hover {
 #about-desc {
     padding: 15px;
     color: white;
-    background-color: #646469;
+    background-color: #B3272D;
     border-radius: 5px;
 }
 
@@ -273,15 +274,12 @@ nav ul li a:hover {
     border-radius: 5px;
     margin-bottom: 30px;
     color: white;
-    height: 260px;
     width: 280px;
 }
 
 #client-work-index img, #student-work-index img {
-    background-color: white;
     padding: 10px;
     margin-bottom: 10px;
-    margin-top: 20px;
 }
 
 #client-work-index h3, #student-work-index h3 {
@@ -292,6 +290,7 @@ nav ul li a:hover {
 #client-work-index p, #student-work-index p {
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 20px;
 }
 
 /* 4. Client Projects */
@@ -452,7 +451,7 @@ nav ul li a:hover {
     text-align: center;
     margin-bottom: 20px;
     font-size: 25px;
-    color: #E2231A;
+    color: white;
 }
 
 #stu-examples-row-1, #stu-examples-row-2 {
@@ -504,6 +503,22 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
+#year-display {
+    background-color: #B3272D;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: none;
+}
+
+.project-lightbox {
+    background-color: #B3272D;
+    border: 3px solid #E2231A;
+}
+
 #so-icon-con{
     background-color: #B3272D;
 }
@@ -553,7 +568,7 @@ footer img {
 
 /* 7. Lightboxes */
 
-#lightbox-client {
+#lightbox-client, #lightbox-student {
     display: none;
     width: 100vw;
     height: 100vh;
@@ -562,7 +577,7 @@ footer img {
     top: 0;
     left: 0;
 
-    background-color: #b3272e88;
+    background-color: #b3272e;
     background-repeat: no-repeat;
 
     background-position: left;
@@ -588,6 +603,7 @@ footer img {
 .lb-text {
     display: flex;
     color: white;
+    margin-bottom: 5px;
 }
 
 .lb-title {
@@ -674,10 +690,6 @@ footer img {
         text-align: center;
     }
 
-    #industry-title {
-        height: 100px;
-    }
-
     #map-mobile {
         display: none;
     }
@@ -735,6 +747,10 @@ footer img {
 
     #year-selector {
         display: flex;
+    }
+
+    #year-display {
+        display: block;
     }
 
     /* ins*/

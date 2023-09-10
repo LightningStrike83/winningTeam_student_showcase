@@ -1,7 +1,8 @@
 let idp_students = [
     {
+        year : 'Selected Year: 2024',
         namea : "Abbot, Spencer",
-        nameb : "Caspe, Kirk ",
+        nameb : "Caspe, Kirk",
         namec : "Da Silva Witt, Tiago",
         named : "Duan, Jintao",
         namee : "Duque De La Rosa, Michelle Paola",
@@ -19,6 +20,7 @@ let idp_students = [
     },
 
     {
+        year : 'Selected Year: 2023',
         namea : "Amari, Ana",
         nameb : "Amari, Fareeha",
         namec : "Correia dos Santos, Lucio",
@@ -38,6 +40,7 @@ let idp_students = [
     },
 
     {
+        year : 'Selected Year: 2022',
         namea : "Dragneel, Natsu",
         nameb : "Elric, Ed",
         namec : "Evans, Soul",
