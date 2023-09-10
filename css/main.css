@@ -410,6 +410,7 @@ nav ul li a:hover {
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 33px;
+    text-shadow: 3px 3px black;
 }
 
 #client-title {
@@ -555,6 +556,7 @@ nav ul li a:hover {
     color: white;
     padding-left: 10px;
     line-height: 2;
+    text-shadow: 3px 3px black;
 }
 
 #hero-bold {
