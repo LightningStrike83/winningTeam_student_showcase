@@ -4,8 +4,6 @@
     display: none;
 }
 
-/* 2. Index */
-
 body {
     margin: 0 auto;
     padding: 0;
@@ -17,7 +15,8 @@ a {
     text-decoration: none;
 }
 
-/* style header */
+/* 2. Header */
+
 header{
     height: 70px;
     background-color: grey;
@@ -46,7 +45,7 @@ nav ul li a {font-size: 22px; color: #E2231A; display: none;}
   background-color: bisque;  
 }
 
-
+/* 3. Index */
 
 
 .stu-w-p-tittle {
