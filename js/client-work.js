@@ -26,25 +26,3 @@ let clientWorkCurrent = [
         solutions : 'Solution: Solutions C',
     }
 ]
-
-let previousClients = [
-    {
-        quote : "I can't say enough about IDP students. IDP students has really helped our business. -2023 Client"
-    },
-
-    {
-        quote : "Coordination of activities improved tremendously with IDP students. -2022 Client"
-    },
-
-    {
-        quote : "I highly recommend IDP students. It has been so important for us as we continue to grow our company. -2021 Client"
-    },
-
-    {
-        quote : "Would definitely recommend IDP students and will definitely be recruiting again. -2020 Client"
-    },
-
-    {
-        quote : "If you want to take your business to the next level, use IDP students and don't look any further. -2019 Client"
-    },
-]

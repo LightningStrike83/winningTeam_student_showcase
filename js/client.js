@@ -44,7 +44,6 @@ function showSlide(n) {
     slides[slideIndex - 1].style.display = 'block';
 }
 
-
 leftClientArrow.addEventListener('click', prevSlide);
 rightClientArrow.addEventListener('click', nextSlide);
 firstWork.addEventListener('click', displayWorkDetails)
