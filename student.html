@@ -28,19 +28,22 @@
             </div>
 
             <div class="mobile-menu col-start-3 col-end-5">
+                <ol>
                     <li><a href="index.html#event-information">EVENTS</a></li>
                     <li><a href="client_projects.html">CLIENT WORK</a></li>
-                    <li><a href="student_work.html">STUDENT WORK</a></li>
-                    <li><a href="student_work#portfolio-title.html">PORTFOLIOS</a></li>
+                    <li><a href="student.html">STUDENT WORK</a></li>
+                    <li><a href="student.html#portfolio-title">PORTFOLIOS</a></li>
+                </ol>
             </div>
         </nav>
     </header>
     
     <main>
         <section id="stu-con" class="grid-con">
-            <section id="stu-work-img" class="col-span-full m-col-span-full">
-                <p id="student-hero-heading" class="col-span-full m-col-span-8"><span id="hero-bold">STUDENT PROJECTS</span> <br> AND WHERE TO FIND THEM</p>
-            </section>
+            <h2 class="hidden">Hero Heading</h2>
+            <div id="stu-work-img" class="col-span-full m-col-span-full">
+                <p id="student-hero-heading" class="col-span-full m-col-span-8 hero-title-full"><span id="hero-bold" class="bold-title">STUDENT PROJECTS</span> <br> AND WHERE TO FIND THEM</p>
+            </div>
         </section>
 
        <section class="grid-con stu-w-p-title" id="stu-work">
@@ -49,12 +52,14 @@
        </section>
 
        <section id="work-button" class="grid-con">
+        <h2 class="hidden">Show Work Button</h2>
             <div class="show-w-btn col-start-2 col-end-4">
                 <p>SHOW WORK</p>
             </div>
        </section>
 
        <section id="stu-examples-row-1" class="grid-con" >
+        <h2 class="hidden">Student Examples Part 1</h2>
             <div class="col-span-full m-col-span-4 project-lightbox" data-member="0">
                 <a href="#lightbox-student"><img class="example-images"
                     sizes="(max-width: 1200px) 100vw, 1200px"
@@ -103,6 +108,7 @@
         </section>
 
         <section id="stu-examples-row-2" class="grid-con">
+            <h2 class="hidden">Student Examples Part 2</h2>
             <div class="col-span-full m-col-span-4 project-lightbox" data-member="3">
                 <a href="#lightbox-student"><img class="example-images"
                     sizes="(max-width: 1200px) 100vw, 1200px"
@@ -151,12 +157,14 @@
        </section>
 
        <section id="portfolio-button" class="grid-con">
+        <h2 class="hidden">Show Portfolios Button</h2>
             <div class="show-w-btn col-start-2 col-end-4">
                 <p>SHOW PORTFOLIOS</p>
             </div>
        </section>
 
        <section id="stu-por-list-con" class="grid-con">
+        <h2 class="hidden">IDP Student Selector</h2>
             <div id="year-selector" class="col-span-full">
                 <p class="year" id="year-2024" data-member="0">2024</p>
                 <p class="year" id="year-2023" data-member="1">2023</p>
@@ -227,6 +235,7 @@
     </main>
 
     <section class="grid-con">
+        <h2 class="hidden">Top Top Arrow</h2>
         <div class="top-icon col-start-4 col-end-5 m-col-start-11 m-col-end-13">
             <a href="#stu-con">
                 <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 56">
@@ -246,6 +255,7 @@
     </section>
 
     <section class="grid-con break-line-nav">
+        <h2 class="hidden">Nav Line</h2>
         <div class="col-span-full nav-line"></div>
     </section>
 
@@ -264,14 +274,17 @@
     <section class="lightbox grid-con" id="lightbox-student">
         <a href="" class="lb_close col-start-4 col-end-5 m-col-start-12 m-col-end-13">X</a>
 
-        <h3 class="lb-title-student col-span-full col-end-5 m-col-start-7 m-col-end-13" id="lb-title-student"></h3>
-        <img class="lb-pic col-start-2 col-end-4 m-col-start-4 m-col-end-9" src="" alt="">
-        <p id="lb-description" class="lb-text col-start-1 col-end-5 m-col-start-7 m-col-end-13">Test</p>
-        <p id="lb-team" class="lb-text col-start-1 col-end-5 m-col-start-7 m-col-end-13">Test</p>
-        <p id="lb-link1" class="lb-text col-start-1 col-end-5 m-col-start-7 m-col-end-13">Test</p>
-        <p id="lb-link2" class="lb-text col-start-1 col-end-5 m-col-start-7 m-col-end-13">Test</p>
-        <p id="lb-link3" class="lb-text col-start-1 col-end-5 m-col-start-7 m-col-end-13">Test</p>
-        <p id="lb-link4" class="lb-text col-start-1 col-end-5 m-col-start-7 m-col-end-13">Test</p>
+        <h3 class="lb-title-student col-span-full col-end-5 m-col-start-7 m-col-end-13" id="lb-title-student">Project Title</h3>
+        <img class="lb-pic col-start-2 col-end-4 m-col-start-1 m-col-end-7" src="#" alt="">
+
+        <div class="col-span-full m-col-start-7 m-col-end-13">
+            <p id="lb-description" class="lb-text">Test</p>
+            <p id="lb-team" class="lb-text">Test</p>
+            <p id="lb-link1" class="lb-text">Test</p>
+            <p id="lb-link2" class="lb-text">Test</p>
+            <p id="lb-link3" class="lb-text">Test</p>
+            <p id="lb-link4" class="lb-text">Test</p>
+        </div>
     </section>
     
     <script src="js/project_information.js"></script>

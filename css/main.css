@@ -134,14 +134,75 @@ nav ul li a:hover {
     margin-bottom: 27px;
 } 
 
-#video-title {
+.hero-title-full {
     font-size: 24px;
     line-height: 1.25;
 }
 
-#fanshawe-video {
+.bold-title {
     font-size: 42px;
     font-weight: bold;
+}
+
+#event-information {
+    display: none;
+}
+
+#industry-photo-m {
+    margin-bottom: 15px;
+}
+
+#industry-title-m {
+    font-size: 50px;
+    font-weight: bold;
+    background-color: #E2231A;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#industry-description-m {
+    margin-bottom: 31px;
+}
+
+#date-details-m {
+    color: white;
+    background-color: #B3272D;
+    line-height: 1.25;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 18px;
+}
+
+#show-schedule-m {
+    display: flex;
+    flex-direction: row;
+    border: 5px solid #E2231A;
+    border-radius: 5px;
+    text-align: center;
+    color: #E2231A;
+    font-weight: bold;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-bottom: 22px;
+    cursor: pointer;
+}
+
+#show-schedule-m p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#schedule-m {
+    background-color: #B3272D;
+    border: 1px solid #B3272D;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+    line-height: 1.25;
+    display: none;
 }
 
 #industry-photo {
@@ -159,6 +220,7 @@ nav ul li a:hover {
 }
 
 #industry-description {
+    font-size: 20px;
     margin-bottom: 31px;
 }
 
@@ -228,8 +290,9 @@ nav ul li a:hover {
 #about-desc {
     padding: 15px;
     color: white;
-    background-color: #B3272D;
+    background-color: #646469;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 #learn-more {
@@ -296,7 +359,6 @@ nav ul li a:hover {
 /* 4. Client Projects */
 
 #hero-con {
-    margin-top: 33px;
     height: 378px;
     background-image: url(../images/meeting.png);
     background-repeat: no-repeat;
@@ -305,9 +367,8 @@ nav ul li a:hover {
 }
 
 #client-title {
-    font-size: 26px;
+    font-size: 42px;
     font-weight: bold;
-    line-height: 2;
 }
 
 #title-2024 {
@@ -364,6 +425,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     font-size: 58px;
+    cursor: pointer;
 }
 
 #client-arrow-right {
@@ -399,12 +461,11 @@ nav ul li a:hover {
 
 #student-hero-heading {
     color: white;
-    font-size: 22px;
+    padding-left: 10px;
     line-height: 2;
 }
 
 #hero-bold {
-    font-size: 26px;
     font-weight: bold;
 }
 
@@ -571,11 +632,10 @@ footer img {
 #lightbox-client, #lightbox-student {
     display: none;
     width: 100vw;
-    height: 100vh;
+    height: 400vh;
 
     position: absolute;
     top: 0;
-    left: 0;
 
     background-color: #b3272e;
     background-repeat: no-repeat;
@@ -603,65 +663,20 @@ footer img {
 .lb-text {
     display: flex;
     color: white;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-.lb-title {
+.lb-title, #lb-title-student {
     background-color: #E2231A;
     display: flex;
     align-items: center;
     padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
 }
 
-/* Footer */
-
-
-#line {
-    width: 350px;
-    margin-top: 25px;
-}
-
-#c-w-con{
-    text-align: center;
-    margin-left: 30px;
-    color: white;
-}
-
-.red-box {
-    background-color: #B3272D;
-    height: 260px;
-    width: 280px;
-    border-radius: 7px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.red-box p {
-    font-size: 14px;
-}
-
-.red-box h3 {
-    font-size: 18px;
-}
-
-
-.circle {
-    border-radius: 50%;
-    background-color: white;
-    height: 104px;
-    width: 104px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: baseline;
-}
-
-#red-line {
-    border: 3px solid #B3272D;
-}
-
-/* Media Queries */
+/* 8. Media Queries */
 
 @media screen and (min-width: 768px) {
 
@@ -698,11 +713,38 @@ footer img {
         display: flex;
     }
 
+    #event-information-m {
+        display: none;
+    }
+
+    #event-information {
+        display: grid;
+    }
+
     #about-desc {
         padding-top: 45px;
         padding-bottom: 25px;
         padding-left: 33px;
         padding-right: 33px;
+        font-size: 22px;
+    }
+
+    #promo-video {
+        order: -1;
+    }
+
+    #about-title {
+        order: -2;
+    }
+
+    .hero-title-full {
+        font-size: 30px;
+        line-height: 1.25;
+    }
+    
+    .bold-title {
+        font-size: 50px;
+        font-weight: bold;
     }
 
     #feature-links {
@@ -753,91 +795,17 @@ footer img {
         display: block;
     }
 
-    /* ins*/
-    #ins-img{
-        width: 552px;
-        height: 314px;
-        margin-top: 20px;
+    .lb-pic {
+        width: 100%;
     }
 
-    #night-des {
-        text-align: center;
-        margin-top: -170px;
-        margin-bottom: 30px;
-        font-size: 24px;
-    }
-    
-    #night-time-box {
-        height: 205px;
-        width: 485px;
-        margin-top: 40px;
-    }
-    #night-time-box p {
-        line-height: 22px; 
-        margin-top: 45px;
+    .lb-text {
+        font-size: 25px;
     }
 
-    #show-btn {
-        width: 344px;
-        text-align: center;
-        padding: 15px 0;
-        margin-top: 20px;
+    #lightbox-client, #lightbox-student {
+        height: 100vh;
     }
-
-    #home-map {
-        width: 552px;
-        height: 340px;
-        margin-top: -270px;
-    }
-    
-    #about-con {
-        width: 552px;
-        height: 350px;
-        background-color: grey;
-        margin-top: 40px;
-    }
-    
-    #about-des {
-        padding-top: 20px;
-        text-align: center;
-        color: white;
-    }
-
-    #learn-box {
-        height: 356px;
-        width: 485px;
-        margin-top: -370px;
-    }
-
-    #lea-btn {
-        width: 358px;
-        height: 55px;
-        font-size: 25px; 
-        padding-top: 15px;
-    }
-
-    #c-w-con{
-        margin-left: 30px;
-        
-    }
-    
-    .red-box {
-        background-color: #B3272D;
-        height: 260px;
-        width: 280px;
-        border-radius: 7px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    
-    .red-box p {
-        font-size: 14px;
-    }
-
-    .red-box h3 {
-        font-size: 18px;
-    }
-
 
     footer nav {
         margin-top: 20px;

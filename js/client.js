@@ -12,6 +12,8 @@ function displayWorkDetails() {
 
     document.querySelector('#lightbox-client').style.display = 'grid';
 
+    document.querySelector('.lb-pic').src = "images/client-" + workDisplay + ".jpg";
+
     document.querySelector('#lb-title-client').textContent= clientWorkCurrent [workDisplay].title
     document.querySelector('#lb-team').textContent = clientWorkCurrent [workDisplay].members;
     document.querySelector('#lb-software').textContent = clientWorkCurrent [workDisplay].software;
