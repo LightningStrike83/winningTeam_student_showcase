@@ -1,30 +1,26 @@
-# Project Name
+# Fanshawe IDP Industry Night Website
 
-TODO: Write a project description
-
-## Installation
-
-TODO: Describe the installation process
+Our team's rendition of a website designed for Industry Night, to showcase previous client work, student projects, and student portfolios.  
 
 ## Usage
 
-TODO: Write usage instructions
+Hopefully it gets used as the actual website!  
 
 ## Contributing
 
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
-
-## History
-
-TODO: Write history
+sophwest / Sophia Westrop  
+LightningStrike83 / Dan Singer  
+spencer78610 / Spencer Abbott  
+duan22650485696 / Jintao (Jax) Duan  
 
 ## Credits
 
-TODO: Write credits
+LightningStrike83 / Dan Singer - Author, designer  
+sophwest / Sophia Westrop  - Designer, motion designer, video editing, consultant  
+spencer78610 / Spencer Abbott - Designer  
+duan22650485696 / Jintao (Jax) Duan - Author  
+
+Music and stock images in video taken from Pixabay  
 
 ## License
 
